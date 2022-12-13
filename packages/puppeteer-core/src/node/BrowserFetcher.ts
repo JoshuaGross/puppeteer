@@ -114,11 +114,20 @@ function downloadURL(
 }
 
 function handleArm64(): void {
+  // TODO: respect the `PUPPETEER_EXECUTABLE_PATH` env var
   let exists = existsSync('/usr/bin/chromium-browser');
   if (exists) {
     return;
   }
   exists = existsSync('/usr/bin/chromium');
+  if (exists) {
+    return;
+  }
+  exists = existsSync('/opt/homebrew/bin/chromium');
+  if (exists) {
+    return;
+  }
+  exists = existsSync('/opt/homebrew/bin/chromium-browser');
   if (exists) {
     return;
   }
