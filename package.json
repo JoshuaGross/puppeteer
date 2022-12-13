@@ -111,6 +111,7 @@
     "cosmiconfig": "^8.0.0",
     "https-proxy-agent": "^5.0.1",
     "progress": "^2.0.3",
-    "proxy-from-env": "^1.1.0"
+    "proxy-from-env": "^1.1.0",
+    "puppeteer-core": "^19.4.0"
   }
 }
