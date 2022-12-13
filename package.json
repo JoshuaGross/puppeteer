@@ -106,5 +106,10 @@
     "packages/*",
     "test",
     "test/installation"
-  ]
+  ],
+  "dependencies": {
+    "cosmiconfig": "^8.0.0",
+    "https-proxy-agent": "^5.0.1",
+    "progress": "^2.0.3"
+  }
 }
